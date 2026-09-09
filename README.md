@@ -14,6 +14,11 @@ product prices across multiple stores.
 - User authentication and profile management
 - Gamification module with themed levels and rewards
 
+## Setup
+1. Open project in Android Studio
+2. Connect Firebase — add your google-services.json
+3. Build and run on emulator or physical device
+
 ## Project Type
 Mobile Programming Subject (IAS3153)
 Bachelor of Computer Science
