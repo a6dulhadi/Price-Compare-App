@@ -1,0 +1,12 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportWidth="48"
+    android:viewportHeight="48">
+  <!-- Orange background circle -->
+  <path android:fillColor="#FF9800"
+      android:pathData="M24,24m-24,0a24,24 0,1 1,48 0a24,24 0,1 1,-48 0"/>
+  <!-- T-shirt shape -->
+  <path android:fillColor="#FFFFFF"
+      android:pathData="M14,14 L20,12 Q21,16 24,16 Q27,16 28,12 L34,14 L38,22 L32,24 L32,38 L16,38 L16,24 L10,22 Z"/>
+</vector>

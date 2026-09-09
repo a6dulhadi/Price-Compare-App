@@ -1,0 +1,8 @@
+<resources>
+    <color name="text_primary">#FFFFFF</color>
+    <color name="bg_main">#121212</color>
+    <color name="card_surface">#1E1E1E</color>
+    <color name="background">#121212</color>
+    <color name="card_bg">#1E1E1E</color>
+    <color name="black">#FFFFFF</color> <!-- Inverting black to white for generic views -->
+</resources>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-feature android:name="android.hardware.camera" android:required="false" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:theme="@style/Theme.PriceCompareApp"
+        android:supportsRtl="true">
+
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".RegisterActivity" android:exported="false" />
+        <activity android:name=".DashboardActivity" android:exported="false" />
+
+        <activity android:name=".pricecompare.ProductListActivity" android:exported="false" />
+        <activity android:name=".pricecompare.AddProductActivity" android:exported="false" />
+        <activity android:name=".pricecompare.BarcodeScanActivity" android:exported="false" />
+        <activity android:name=".pricecompare.ProductDetailActivity" android:exported="false" />
+        <activity android:name=".pricecompare.PriceCompareHubActivity" android:exported="false" />
+        <activity android:name=".ProfileActivity" android:exported="false" />
+        <activity android:name=".ShoppingListActivity" android:exported="false" />
+        <activity android:name=".pricecompare.EditProductActivity" android:exported="false" />
+
+        <!-- FIX 1: GameMenuActivity was missing from manifest -->
+        <activity android:name=".game.GameHubActivity" android:exported="false" />
+        <activity android:name=".game.GameMenuActivity" android:exported="false" />
+        <activity android:name=".game.GameActivity" android:exported="false" />
+        <activity android:name=".game.ResultActivity" android:exported="false" />
+
+    </application>
+
+</manifest>

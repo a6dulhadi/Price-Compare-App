@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/bg_card"
+    android:padding="14dp"
+    android:layout_marginBottom="12dp">
+
+    
+    <TextView
+        android:id="@+id/tvStoreHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tesco"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:paddingBottom="8dp" />
+
+    
+    <LinearLayout
+        android:id="@+id/llDateRows"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" />
+
+    
+    <ImageView
+        android:id="@+id/ivEntryPhoto"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:scaleType="centerCrop"
+        android:layout_marginTop="10dp"
+        android:visibility="gone"
+        android:contentDescription="Product photo" />
+
+    
+    <Button
+        android:id="@+id/btnSeeAll"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:text="See all"
+        android:textAllCaps="false"
+        android:textSize="12sp"
+        android:textColor="@color/white"
+        android:background="@drawable/bg_button_primary"
+        android:layout_marginTop="8dp"
+        android:visibility="gone" />
+
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <Button
+            android:id="@+id/btnEdit"
+            android:layout_width="0dp"
+            android:layout_height="38dp"
+            android:layout_weight="1"
+            android:layout_marginEnd="8dp"
+            android:text="Edit"
+            android:textAllCaps="false"
+            android:textSize="12sp"
+            android:textColor="@color/white"
+            android:background="@drawable/bg_button_primary" />
+
+        <Button
+            android:id="@+id/btnDelete"
+            android:layout_width="0dp"
+            android:layout_height="38dp"
+            android:layout_weight="1"
+            android:text="Delete"
+            android:textAllCaps="false"
+            android:textSize="12sp"
+            android:textColor="@color/white"
+            android:background="@drawable/bg_button_danger" />
+    </LinearLayout>
+
+</LinearLayout>

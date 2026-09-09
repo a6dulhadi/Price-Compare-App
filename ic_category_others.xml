@@ -1,0 +1,15 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportWidth="48"
+    android:viewportHeight="48">
+  <!-- Gray background circle -->
+  <path android:fillColor="#607D8B"
+      android:pathData="M24,24m-24,0a24,24 0,1 1,48 0a24,24 0,1 1,-48 0"/>
+  <!-- Price tag shape -->
+  <path android:fillColor="#FFFFFF"
+      android:pathData="M12,12 L28,12 Q30,12 30,14 L38,26 Q39,27 38,28 L28,38 Q27,39 26,38 L14,26 Q12,24 12,22 Z"/>
+  <!-- Tag hole -->
+  <path android:fillColor="#607D8B"
+      android:pathData="M18,18m-3,0a3,3 0,1 1,6 0a3,3 0,1 1,-6 0"/>
+</vector>

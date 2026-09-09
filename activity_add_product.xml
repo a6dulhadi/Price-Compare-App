@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/primary"
+        android:padding="16dp"
+        android:gravity="center_vertical">
+
+        <ImageButton
+            android:id="@+id/btnBack"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:src="@android:drawable/ic_menu_revert"
+            android:background="@android:color/transparent"
+            android:contentDescription="Back"
+            app:tint="@color/white" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Add Product"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginStart="12dp" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Product Name"
+                android:textColor="@color/gray"
+                android:textSize="13sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="16dp">
+
+                <AutoCompleteTextView
+                    android:id="@+id/etProductName"
+                    android:layout_width="0dp"
+                    android:layout_height="52dp"
+                    android:layout_weight="1"
+                    android:hint="e.g. Milo 1kg"
+                    android:background="@drawable/bg_edittext"
+                    android:paddingHorizontal="16dp"
+                    android:completionThreshold="1" />
+
+                <ImageButton
+                    android:id="@+id/btnScanBarcode"
+                    android:layout_width="52dp"
+                    android:layout_height="52dp"
+                    android:layout_marginStart="8dp"
+                    android:src="@android:drawable/ic_menu_camera"
+                    android:background="@drawable/bg_edittext"
+                    android:contentDescription="Scan Barcode"
+                    app:tint="@color/gray" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvScannedBarcode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-12dp"
+                android:layout_marginBottom="16dp"
+                android:textColor="@color/primary"
+                android:textSize="12sp"
+                android:visibility="gone" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Category"
+                android:textColor="@color/gray"
+                android:textSize="13sp" />
+
+            <Spinner
+                android:id="@+id/spinnerCategory"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:background="@drawable/bg_edittext"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="16dp"
+                android:paddingHorizontal="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Store Name"
+                android:textColor="@color/gray"
+                android:textSize="13sp" />
+
+            <AutoCompleteTextView
+                android:id="@+id/etStoreName"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:hint="e.g. Tesco"
+                android:background="@drawable/bg_edittext"
+                android:paddingHorizontal="16dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="16dp"
+                android:completionThreshold="1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Price (RM)"
+                android:textColor="@color/gray"
+                android:textSize="13sp" />
+
+            <EditText
+                android:id="@+id/etPrice"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:hint="e.g. 17.90"
+                android:inputType="numberDecimal"
+                android:background="@drawable/bg_edittext"
+                android:paddingHorizontal="16dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="16dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Notes (optional)"
+                android:textColor="@color/gray"
+                android:textSize="13sp" />
+
+            <EditText
+                android:id="@+id/etNotes"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:hint="e.g. Promotion this week"
+                android:gravity="top"
+                android:inputType="textMultiLine"
+                android:background="@drawable/bg_edittext"
+                android:padding="12dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="16dp" />
+
+            
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Product Photo (optional)"
+                android:textColor="@color/gray"
+                android:textSize="13sp" />
+
+            <ImageButton
+                android:id="@+id/btnCapturePhoto"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginTop="6dp"
+                android:src="@android:drawable/ic_menu_camera"
+                android:background="@drawable/bg_edittext"
+                android:contentDescription="Take Photo"
+                app:tint="@color/primary" />
+
+            
+            <ImageView
+                android:id="@+id/ivProductPhoto"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:scaleType="centerCrop"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:visibility="gone"
+                android:contentDescription="Product photo preview" />
+
+            <TextView
+                android:id="@+id/tvError"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/danger"
+                android:textSize="13sp"
+                android:visibility="gone"
+                android:layout_marginBottom="8dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+
+                <Button
+                    android:id="@+id/btnCancel"
+                    android:layout_width="0dp"
+                    android:layout_height="52dp"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="8dp"
+                    android:text="Cancel"
+                    android:textColor="@color/gray"
+                    android:background="@drawable/bg_edittext" />
+
+                <Button
+                    android:id="@+id/btnSave"
+                    android:layout_width="0dp"
+                    android:layout_height="52dp"
+                    android:layout_weight="1"
+                    android:text="Add"
+                    android:textColor="@color/white"
+                    android:background="@drawable/bg_button_primary" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

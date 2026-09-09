@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "568890656124",
+    "project_id": "pricecompare-957e1",
+    "firebase_url": "https://pricecompare-957e1-default-rtdb.asia-southeast1.firebasedatabase.app/",
+    "storage_bucket": "pricecompare-957e1.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:568890656124:android:03b49a39503e0fdaf750f9",
+        "android_client_info": {
+          "package_name": "com.pricecompare.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCP3ehUUzRX8JgX0jU1hKlVgixzt0KWCus"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,18 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportWidth="48"
+    android:viewportHeight="48">
+  <!-- Purple background circle -->
+  <path android:fillColor="#9C27B0"
+      android:pathData="M24,24m-24,0a24,24 0,1 1,48 0a24,24 0,1 1,-48 0"/>
+  <!-- Bottle body -->
+  <path android:fillColor="#FFFFFF"
+      android:pathData="M20,16 L20,14 Q20,12 22,12 L26,12 Q28,12 28,14 L28,16 Q31,18 31,22 L31,34 Q31,36 29,36 L19,36 Q17,36 17,34 L17,22 Q17,18 20,16 Z"/>
+  <!-- Bottle cap -->
+  <path android:fillColor="#CE93D8"
+      android:pathData="M21,10 L27,10 L27,14 L21,14 Z"/>
+  <!-- Shine line -->
+  <path android:fillColor="#9C27B0" android:strokeColor="#9C27B0" android:strokeWidth="1.5"
+      android:pathData="M20,22 Q20,20 22,20"/>
+</vector>
