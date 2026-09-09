@@ -1,4 +1,4 @@
-# Price-Compare-App
+
 # Price Compare App
 
 An Android application that allows users to compare 
